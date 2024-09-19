@@ -1,0 +1,98 @@
+
+body {
+    font-family: "Silkscreen", sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.calculator {
+    background-color: rgb(200, 106, 200);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(222, 46, 46, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+
+.display {
+    background-color: white;
+    color: black;
+    font-size: 2.5rem;
+    padding: 20px;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+}
+
+.btn {
+    padding: 20px;
+    background-color: pink;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+.btn:hover {
+    background-color: #555;
+}
+
+
+[data-action="operator"] {
+    background-color: #e52f84;
+}
+
+[data-action="operator"]:hover {
+    background-color: #e67e22;
+}
+
+
+.special-btn {
+    background-color: #c0392b;
+}
+
+
+.special-btn:hover {
+    background-color: #e74c3c;
+}
+
+
+.calculate-btn {
+    background-color: #d41788;
+    grid-column: span 2;
+}
+
+
+.calculate-btn:hover {
+    background-color: #2675e2;
+}
+
+
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
